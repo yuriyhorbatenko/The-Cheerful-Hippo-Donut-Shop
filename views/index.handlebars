@@ -1,33 +1,28 @@
-<div id="home">
-  <div class="container">
-    <div class="row">
-      <div class="col-8 offset-2">
-        <h1>{{msg}}</h1>
-        <h2>This is our Home Page!</h2>
-        <form class="clearfix mb-4" action="POST">
-          <div class="form-group">
-            <label for="example-text">Example Text</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
-          </div>
-          <div class="form-group">
-            <label for="example-description">Example Description</label>
-            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea>
-          </div>
-          <button id="submit" class="btn btn-primary float-right">Submit</button>
-        </form>
-        <h3>Examples:</h3>
-        <ul id="example-list" class="list-group">
-          {{#each examples}}
-          <li data-id="{{this.id}}" class="list-group-item">
-            <a href="example/{{this.id}}">{{this.text}}</a>
-            <button class="btn btn-danger float-right delete">ｘ</button>
-          </li>
-          {{/each}}
-        </ul>
-      </div>
-    </div>
+<div class="scrolls">
+  <div class="up"><span>↑</span>
+    <div class="center"><span>mouse <br> scrolling</span></div>
   </div>
+  <div class="down"><span>↓</span></div>
 </div>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/index.js"></script>
+<div class="smooth">
+  <div class="header">
+    <ul>
+      <li><a href="#home">home</a></li>
+      <li><a href="#about">Order</a></li>
+      <li><a href="#price">about</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </div>
+  <section id="home">
+    <h2>Section home</h2>
+  </section>
+  <section id="about">
+    <h2>Section order</h2>
+  </section>
+  <section id="price">
+    <h2>Section about</h2>
+  </section>
+  <section id="contact">
+    <h2>Section contact</h2>
+  </section>
+</div>
