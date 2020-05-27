@@ -1,6 +1,7 @@
 *, ::before, ::after {
   box-sizing: border-box;
 }
+
 body {
   position: relative;
   margin: 0;
@@ -8,12 +9,8 @@ body {
   display: flex;
   height: 100vh;
   flex-direction: column;
-  line-height: 1.5;
-  font-family: "Montserrat", sans-serif;
-  font-size: 62.5%;
-  color: #f4f4f4;
-  background-color: #1d1e22;
 }
+
 .scrolls {
   position: absolute;
   top: 50%;
@@ -28,9 +25,11 @@ body {
   font-size: 2rem;
   color: #f4f4f4;
 }
+
 .scrolls .center {
   font-size: 0.825rem;
 }
+
 .smooth {
   position: relative;
   width: 100%;
@@ -41,6 +40,15 @@ body {
   scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;
 }
+
+.logo {
+  max-width: 280px;
+  margin-top: 30px;
+  padding: 20px;
+  z-index: 2;
+  position: absolute;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -49,9 +57,13 @@ body {
   width: 100%;
   min-height: 60px;
   font-size: 1rem;
-  background-image: linear-gradient(180deg, #1d1e22, rgba(29, 30, 34, 0.1), transparent);
-  mix-blend-mode: luminosity;
+  background-image: linear-gradient(180deg, #1d1e22da, rgba(29, 30, 34, 0.466), transparent);
+  line-height: 1.5;
+  font-family: "Snap ITC Std";
+  font-size: 110%;
+  letter-spacing: 3px;
 }
+
 .header ul {
   margin: 0;
   padding: 0;
@@ -60,17 +72,21 @@ body {
   width: 100%;
   justify-content: center;
 }
+
 .header ul li {
   margin: 0 1em;
   padding: 1em;
 }
+
 .header ul li a {
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
-  color: #f4f4f4;
+  color: #e978a9;
+  text-shadow: 2px 2px 2px #0000009a;
 }
+
 .header ul li a::after {
   position: absolute;
   bottom: -3px;
@@ -80,10 +96,12 @@ body {
   height: 3px;
   transition: all 0.2s linear;
 }
+
 .header ul li a:hover::after {
   width: 100%;
-  background-color: #f4f4f4;
+  background-color: #e978a9;
 }
+
 section {
   position: relative;
   display: flex;
@@ -98,6 +116,7 @@ section {
   background-size: cover;
   scroll-snap-align: center;
 }
+
 section h2 {
   text-transform: uppercase;
   font-size: 2.25rem;
