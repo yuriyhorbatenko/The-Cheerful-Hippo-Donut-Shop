@@ -20,5 +20,5 @@ CREATE TABLE orders
     (100) default " " NOT NULL,
     purchase boolean DEFAULT false,
     PRIMARY KEY
-    (id)
+    (item_id)
 );
