@@ -1,31 +1,22 @@
 {
   "development": {
     "username": "root",
-    "password": "UnicornLove16",
-    "database": "donuts_db",
+    "password": "root1234",
+    "database": "donutshop_db",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "UnicornLove16",
-    "database": "donuts_db",
-    "host": "localhost",
-    "host": "127.0.0.1",
-    "port": 3306,
-    "dialect": "mysql",
-    "operatorsAliases": false
-  },
-  "test": {
-    "username": "root",
     "password": "root1234",
-    "database": "donuts_db",
+    "database": "donutshop_db",
     "host": "127.0.0.1",
     "port": 3306,
     "dialect": "mysql",
     "operatorsAliases": false
   },
   "production": {
+    "use_env_variable": "JAWSDB_URL",
     "username": "ho4xt9ow4mlouseg",
     "password": "d6mt9ilwl5nx0onq",
     "database": "aprxckbrxkjvkuam",
