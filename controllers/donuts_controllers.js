@@ -7,13 +7,13 @@ var donut = require("../models/donut.js");
 
 //create routes, index
 router.get("/", function (req, res) {
-    donut.selectAll(function (data) {
-        var hbsObject = {
-            orders: data
-        };
-        console.log(hbsObject);
-        res.render("index", hbsObject);
-    });
+  donut.selectAll(function (data) {
+    var hbsObject = {
+      orders: data
+    };
+    console.log(hbsObject);
+    res.render("index", hbsObject);
+  });
 });
 
 module.exports = router;
