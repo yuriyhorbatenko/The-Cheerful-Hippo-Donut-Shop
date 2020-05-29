@@ -4,7 +4,9 @@
   </div>
   <div class="down"><span>↓</span></div>
 </div>
+
 <div class="smooth">
+
   <div class="header">
     <img class="logo" src="assets/img/logo.png" alt="">
     <ul>
@@ -12,9 +14,10 @@
       <li><a href="#menu">menu</a></li>
       <li><a href="#order">order</a></li>
       <li><a href="#about">about</a></li>
-      <li><a href="#login">login</a></li>
+      <li><a href="" data-target="#staticBackdrop" data-toggle="modal">login</a></li>
     </ul>
   </div>
+
   <section id="home">
     <h2>Section home</h2>
   </section>
@@ -42,7 +45,10 @@
   <section id="about">
     <h2>Section about</h2>
   </section>
-  <section id="login">
-    <h2>Section login</h2>
-  </section>
+
 </div>
+
+
+{{> modals/modal-login }}
+
+{{> modals/modal-total }}

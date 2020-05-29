@@ -144,6 +144,64 @@ section:nth-child(4) {
   background-image: url(../img/2.jpg);
 }
 
+
+.btn-primary {
+  color: #fff;
+  background-color: #e978a9;
+  border-color: #e978a9;
+  border-radius: 10px;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #6c757dad;
+  border-color: #6c757dad;
+  border-radius: 10px;
+}
+
+.btn-secondary:hover {
+  color: #6c757dad;
+  background-color: #ffffff;
+  border-color: #6c757dad;
+  border-radius: 10px;
+}
+
+.btn-primary:hover {
+  color: #e978a9;
+  background-color: #ffffff;
+  border-color: #e978a9;
+  border-radius: 10px;
+}
+
+.form-control:focus {
+  border-color: #e978a9;
+  box-shadow: 0 0 0 0.2rem #e978a955;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem #e978a955;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #e978a9;
+  border-color: #e978a9;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem #6c757d75;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #6c757dad;
+  border-color: #6c757dad;
+}
+
+.modal-content {
+  border-radius: 25px;
+  background-color: #ffffff;
+=======
 #menuItems {
   position: relative;
   text-decoration: none;
