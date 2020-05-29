@@ -144,6 +144,7 @@ section:nth-child(4) {
   background-image: url(../img/2.jpg);
 }
 
+
 .btn-primary {
   color: #fff;
   background-color: #e978a9;
@@ -200,4 +201,20 @@ section:nth-child(4) {
 .modal-content {
   border-radius: 25px;
   background-color: #ffffff;
+=======
+#menuItems {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color:  #f4f4f4;
+  text-shadow: -1px -1px 0 #e978a9, 1px -1px 0 #e978a9, -1px 1px 0 #e978a9, 1px 1px 0 #e978a9;
+}
+#orderItems {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color:  #f4f4f4;
+  text-shadow: -1px -1px 0 #e978a9, 1px -1px 0 #e978a9, -1px 1px 0 #e978a9, 1px 1px 0 #e978a9;
 }
