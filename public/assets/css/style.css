@@ -201,8 +201,11 @@ section:nth-child(4) {
 .modal-content {
   border-radius: 25px;
   background-color: #ffffff;
-=======
+}
+
 #menuItems {
+  background-color: #86483b;
+  opacity: .8;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
@@ -211,6 +214,8 @@ section:nth-child(4) {
   text-shadow: -1px -1px 0 #e978a9, 1px -1px 0 #e978a9, -1px 1px 0 #e978a9, 1px 1px 0 #e978a9;
 }
 #orderItems {
+  background-color: #86483b;
+  opacity: .8;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;

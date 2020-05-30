@@ -34,13 +34,14 @@
   </section>
   <section id="order">
     <h2>Section order</h2>
-    <ul class="order text-center" style="list-style-type:none;" id="orderItems">
+    <ul class="order text-left" style="list-style-type:none;" id="orderItems">
       {{#each orders}}
       {{#unless this.purchase}}
       {{> orders/order-block purchase=false}}
       {{/unless}}
       {{/each}}
     </ul>
+    <button class="btn btn-primary" type="submit" name="action" id="submitOrder">Submit Order</button>
   </section>
   <section id="about">
     <h2>Section about</h2>
