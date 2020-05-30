@@ -1,4 +1,3 @@
-
 var express = require("express");
 var exphbs = require("express-handlebars");
 
@@ -13,7 +12,6 @@ app.use(
 );
 app.use(express.json());
 app.use(express.static("public"));
-
 
 // Handlebars
 app.engine(
@@ -38,14 +36,13 @@ if (process.env.NODE_ENV === "test") {
   syncOptions.force = true;
 }
 
-
 module.exports = app;
 // app.get("/", function (req, res) {
 //   res.render("index");
 // });
 
 // Start our server so that it can begin listening to client requests.
-app.listen(PORT, function () {
+app.listen(PORT, function() {
   // Log (server-side) when our server has started
   console.log("Server listening on: http://localhost:" + PORT);
 });
