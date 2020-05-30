@@ -7,6 +7,7 @@ $host = "localhost";
 $dbusername = "root";
 $dbpassword = "root1234";
 $dbname = "donutshop_db";
+// ---
 // Create connection
 $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
 
