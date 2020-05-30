@@ -6,8 +6,8 @@ var router = express.Router();
 var donut = require("../models/donut.js");
 
 //create routes, index
-router.get("/", function (req, res) {
-  donut.selectAll(function (data) {
+router.get("/", function(req, res) {
+  donut.selectAll(function(data) {
     var hbsObject = {
       orders: data
     };
