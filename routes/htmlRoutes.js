@@ -23,6 +23,15 @@ module.exports = function(app) {
   });
 
   // load menu page
+  app.get("/index/:menu", function(req, res) {
+    db.Index.findAll({ where: {id: req.params.id} }).then(function(
+      dbIndex
+    ){
+      res.render("index", {
+        index: dbIndex
+      });
+    });
+  });
   
 
   // Render 404 page for any unmatched routes
