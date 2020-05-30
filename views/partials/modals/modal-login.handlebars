@@ -11,7 +11,7 @@
 
 			<div class="modal-body">
 
-				<form action="">
+				<form action="connect.php" method="POST">
 					<label class="sr-only" for="inlineFormInputGroupUsername2"></label>
 					<div class="input-group mb-2 mr-sm-2">
 						<div class="input-group-prepend">
@@ -19,8 +19,8 @@
 									account_circle
 								</span></div>
 						</div>
-						<input type="text" class="form-control" id="inlineFormInputGroupUsername1" placeholder="login"
-							required>
+						<input name="username" type="text" class="form-control" id="inlineFormInputGroupUsername1"
+							placeholder="login" required>
 					</div>
 
 					<label class="sr-only" for="inlineFormInputGroupUsername2"></label>
@@ -30,17 +30,20 @@
 									lock
 								</span></div>
 						</div>
-						<input type="text" class="form-control" id="inlineFormInputGroupUsername2"
+						<input name="password" type="text" class="form-control" id="inlineFormInputGroupUsername2"
 							placeholder="password" required>
 					</div>
 
-			</div>
-			<div class="modal-footer">
 
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				<button type="submit" class="btn btn-primary">Submit</button>
+					<div class="modal-footer">
+
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="submit" class="btn btn-primary">Submit</button>
+
+					</div>
+
 				</form>
+
 			</div>
 		</div>
 	</div>
-</div>
