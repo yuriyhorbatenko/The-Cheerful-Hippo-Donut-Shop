@@ -1,3 +1,6 @@
 <li>
-    {{id}} - {{menu_item}} - {{price}} - {{category}}
+    {{item_id}} - {{menu_item}} - {{price}} - {{category}}
+    <input class="purchase" type="hidden" name="option" data-id="{{this.item_id}}" data-state="{{purchase}}">
+    <input class="purchase" type="checkbox" name="option" data-id="{{this.item_id}}" data-state="{{purchase}}">
+    <label class="form-check-label" for="inlineCheckbox1"></label>
 </li>
