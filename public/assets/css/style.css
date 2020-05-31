@@ -223,3 +223,13 @@ section:nth-child(4) {
   color:  #f4f4f4;
   text-shadow: -1px -1px 0 #e978a9, 1px -1px 0 #e978a9, -1px 1px 0 #e978a9, 1px 1px 0 #e978a9;
 }
+#purchaseItems {
+  background-color: #86483b;
+  opacity: .8;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color:  #f4f4f4;
+  text-shadow: -1px -1px 0 #e978a9, 1px -1px 0 #e978a9, -1px 1px 0 #e978a9, 1px 1px 0 #e978a9;
+}
