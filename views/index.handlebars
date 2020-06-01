@@ -21,36 +21,64 @@
   <section id="home">
     <h2>Section home</h2>
   </section>
-  <section id="menu">
-    <br>
-    <br>
-    <h2 class="text-center">Our Donut and Drink Selections!</h2>
-    <ul class="menu text-center" style="list-style-type:none;" id="menuItems">
-      {{#each orders}}
-      {{> orders/menu-block purchase=false}}
-      {{/each}}
-    </ul>
-    <h2 class="text-center"><a href="#order">Click to Begin Your Order!</a></h2>
-  </section>
-  <section id="order">
-    <h2>Section order</h2>
-    <ul class="order text-left" style="list-style-type:none;" id="orderItems">
-      {{#each orders}}
-      {{#unless this.purchase}}
-      {{> orders/order-block purchase=false}}
-      {{/unless}}
-      {{/each}}
-    </ul>
-    <button class="btn btn-primary" type="submit" name="action" id="submitOrder">Submit Order</button>
-    <ul class="order text-right" style="list-style-type:none;" id="purchaseItems">
-      {{#each orders}}
-      {{#if this.purchase}}
-      {{> orders/purchase-block purchase=true}}
-      {{/if}}
-      {{/each}}
-    </ul>
 
+
+  <section id="menu">
+    <div class="menu">
+
+      <h3>Our signature donuts</h3>
+      <ul class="food">
+        {{#each orders}}
+        {{#if food}}
+        {{> orders/menu-block food=true }}
+        {{/if}}
+        {{/each}}
+      </ul>
+
+      <h3>Our signature drinks</h3>
+      <ul class="drinks">
+        {{#each orders}}
+        {{#if drinks}}
+        {{> orders/menu-block drinks=true }}
+        {{/if}}
+        {{/each}}
+      </ul>
+
+
+      <div class="order-now-div">
+        <a class="order-now" href="#order"> Order Now!</a>
+      </div>
+
+
+    </div>
   </section>
+
+
+
+
+  <section id="order">
+    <div class="order">
+
+      <ul class="order text-left" style="list-style-type:none;" id="orderItems">
+        {{#each orders}}
+        {{#unless this.purchase}}
+        {{> orders/order-block purchase=false}}
+        {{/unless}}
+        {{/each}}
+      </ul>
+      <button class="btn btn-primary" type="submit" name="action" id="submitOrder">Submit Order</button>
+      <ul class="order text-right" style="list-style-type:none;" id="purchaseItems">
+        {{#each orders}}
+        {{#if this.purchase}}
+        {{> orders/purchase-block purchase=true}}
+        {{/if}}
+        {{/each}}
+      </ul>
+
+    </div>
+  </section>
+
+
   <section id="about">
     <h2>Section about</h2>
   </section>
