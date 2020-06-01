@@ -99,11 +99,11 @@
 // $exampleList.on("click", ".delete", handleDeleteBtnClick);
 
 // this is for order page, submit button and ajax to update
-$(document).ready(function () {
-  $("#submitOrder").on("click", function (event) {
+$(document).ready(function() {
+  $("#submitOrder").on("click", function(event) {
     event.preventDefault();
 
-    $("input[name='option']:checked").each(function () {
+    $("input[name='option']:checked").each(function() {
       console.log(this);
       var itemId = $(this).data("id");
       console.log("itemid", itemId);
@@ -113,7 +113,7 @@ $(document).ready(function () {
       $.ajax("/orders/update/" + itemId, {
         type: "PUT",
         data: purchaseState
-      }).then(function () {
+      }).then(function() {
         console.log("changed to", purchaseState);
         location.reload();
       });
@@ -121,7 +121,7 @@ $(document).ready(function () {
   });
 
   // this is for reset/undo purchase button in orderform
-  $("#undoPurchase").on("click", function (event) {
+  $("#undoPurchase").on("click", function(event) {
     event.preventDefault();
     console.log(this);
     var undoId = $(this).data("id");
@@ -131,7 +131,7 @@ $(document).ready(function () {
     $.ajax("/orders/update/" + undoId, {
       type: "PUT",
       data: undoState
-    }).then(function () {
+    }).then(function() {
       console.log("changed to", undoState);
       location.reload();
     });
