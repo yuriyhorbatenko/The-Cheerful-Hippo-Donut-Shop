@@ -156,5 +156,13 @@
 }
 
 .order {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
+  width: 65%;
+  padding: 20px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 11px 3px rgba(0, 0, 0, 0.329);
+  padding-top: 8px; 
+  background-image: url(../img/back4.jpg);
+  
 }
+

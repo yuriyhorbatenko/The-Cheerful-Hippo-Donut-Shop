@@ -59,7 +59,7 @@
   <section id="order">
     <div class="order">
 
-      <ul class="order text-left" style="list-style-type:none;" id="orderItems">
+      <ul class="order-list">
         {{#each orders}}
         {{#unless this.purchase}}
         {{> orders/order-block purchase=false}}
