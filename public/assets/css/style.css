@@ -1,3 +1,4 @@
+
 *, ::before, ::after {
   box-sizing: border-box;
 }
@@ -150,7 +151,7 @@ section {
 .menu_item {
   font-weight: 900;
   text-decoration: underline;
-  font-variant: small-caps;
+  font-variant-caps: titling-caps;
   text-shadow: 2px 2px 2px #00000018;
 }
 
@@ -159,30 +160,41 @@ section {
   font-weight: 900;
 }
 
-.order-now {
-  margin-bottom: 0px;
-  width: 14rem;
-  margin: 0 auto 0 auto;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 900;
-  font-family: snap;
-  color: #1d1e22;
-  border-radius: 0.25em;
-  text-shadow: 2px 2px 2px #000000d0;
-  color: #e978a9;
-}
-
 .order-now-div {
   display: flex;
   justify-content: center;
-  font-size: 1.5rem;
+}
+
+.order-now {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.25em;
+  text-shadow: 2px 2px 2px #000000dc;
+  color: #e978a9;
+  font-weight: 900;
+  font-family: snap;
+  font-size: 1.4rem;
+}
+
+.order-now::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  content: '';
+  width: 0;
+  height: 3px;
+  transition: all 0.4s linear;
+}
+
+.order-now:hover::after {
+  width: 100%;
+  background-color: #e978a9;
 }
 
 .order-now:hover {
   text-decoration: none;
   color: #e978a9;
-  text-decoration: underline;
 }
 
 section h3 {
@@ -203,7 +215,7 @@ section h3 {
 }
 
 .food-drinks:nth-child(even) {
-  background-color: #e4c0cfde;
+  background-color: #e4c0cfa6;
   padding: 2px;
 }
 
@@ -221,13 +233,13 @@ section h2 {
 }
 
 section:nth-child(2) {
-  background-image: url(../img/4.jpg);
+  background-image: url(../img/16.jpg);
 }
 section:nth-child(3) {
-  background-image: url(../img/1.jpg);
+  background-image: url(../img/18.jpg);
 }
 section:nth-child(4) {
-  background-image: url(../img/2.jpg);
+  background-image: url(../img/4.jpg);
 }
 
 .btn-primary {
@@ -287,4 +299,3 @@ section:nth-child(4) {
   border-radius: 25px;
   background-color: #ffffff;
 }
-

@@ -14,7 +14,7 @@
       <li><a href="#menu">menu</a></li>
       <li><a href="#order">order</a></li>
       <li><a href="#about">about</a></li>
-      <li><a href="" data-target="#staticBackdrop" data-toggle="modal">login</a></li>
+      <li><a href="#login">login</a></li>
     </ul>
   </div>
 
@@ -55,29 +55,22 @@
   </section>
 
 
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 0437734599dcee0926bb06b4e4f72ad4bc9ca078
   <section id="order">
-    <div class="order">
 
-      <ul class="order-list">
+    <div class="order">
+      <h3>Please select your order</h3>
+      <ul class="order-list-ul">
         {{#each orders}}
         {{#unless this.purchase}}
         {{> orders/order-block purchase=false}}
         {{/unless}}
         {{/each}}
       </ul>
-      <button class="btn btn-primary" type="submit" name="action" id="submitOrder">Submit Order</button>
-      <ul class="order text-right" style="list-style-type:none;" id="purchaseItems">
-        {{#each orders}}
-        {{#if this.purchase}}
-        {{> orders/purchase-block purchase=true}}
-        {{/if}}
-        {{/each}}
-      </ul>
+
+      <div class="add-now-div">
+        <a class="add-now" href="#modal">Add to cart</a>
+      </div>
+
 
     </div>
   </section>
@@ -90,7 +83,5 @@
 
 </div>
 
-
-{{> modals/modal-login }}
 
 {{> modals/modal-total }}
