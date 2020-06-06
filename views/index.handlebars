@@ -8,21 +8,34 @@
 <div class="smooth">
 
   <div class="header">
-    <img class="logo" src="assets/img/logo.png" alt="">
+    <a href="#home">
+      <img class="logo" src="assets/img/logo.png"></a>
     <ul>
       <li><a href="#home">home</a></li>
       <li><a href="#menu">menu</a></li>
       <li><a href="#order">order</a></li>
       <li><a href="#about">about</a></li>
-      <li><a href="#login">login</a></li>
+      <li><a href="" data-target="#staticBackdrop" data-toggle="modal">login</a></li>
     </ul>
   </div>
 
-
   <section id="home">
-    <h2>Section home</h2>
-  </section>
+    <div class="home">
 
+      <a href="#menu">
+        <h1><span>"Cheerful&nbsp;</span><span>Hippo"</span></h1>
+      </a>
+      <h1 class="donut-shop">Donut - Shop</h1>
+      <br>
+      <h3 class="text1">Making donuts big enough to satisfy even a hippopotamus<br>since 1985</h3>
+      <br>
+      <h3 class="text2">The Cheerful Hippo was founded in 1985 by three friends. Their goal was to bring homemade tasty
+        donuts with all natural ingredients to the people in their community. These donuts are made in front of you, so
+        you receive hot and fresh donuts with each order.</h3>
+      <br>
+      <h3 class="text3">Danielle-Ken-Yuriy</h3>
+    </div>
+  </section>
 
   <section id="menu">
     <div class="menu">
@@ -54,7 +67,6 @@
     </div>
   </section>
 
-
   <section id="order">
 
     <div class="order">
@@ -75,13 +87,40 @@
     </div>
   </section>
 
-
   <section id="about">
-    <h2>Section about</h2>
-  </section>
+    <div class="about">
 
+      <figure class="snip1566">
+        <img src="assets/img/dani.jpeg" />
+        <figcaption><i>
+            <div class="portfolio">#Portfolio</div> Danielle Gehr
+          </i></figcaption>
+        <a href="https://danigehr16.github.io/Danielle-Gehr-Portfolio-/" target="_blank"></a>
+      </figure>
+
+      <figure class="snip1566">
+        <img src="assets/img/ken.jpg" />
+        <figcaption><i>
+            <div class="portfolio">#Portfolio</div>Ken Dacanay
+          </i></figcaption>
+        <a href="https://kdacanay.github.io/Portfolio-Update/" target="_blank"></a>
+      </figure>
+
+      <figure class="snip1566">
+        <img src="assets/img/yuriy.jpg" />
+        <figcaption><i>
+            <div class="portfolio">#Portfolio</div>Yuriy Horbatenko
+          </i></figcaption>
+        <a href="https://yuriyhorbatenko.github.io/" target="_blank"></a>
+      </figure>
+
+
+    </div>
+
+  </section>
 
 </div>
 
+{{> modals/modal-login }}
 
 {{> modals/modal-total }}
