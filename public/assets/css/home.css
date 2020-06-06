@@ -1,0 +1,79 @@
+.home {
+    background-color: rgb(255, 255, 255);
+    width: 65%;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 11px 3px rgba(0, 0, 0, 0.329);
+    padding-top: 8px; 
+    background-image: url(../img/back4.jpg);
+    text-align: center;
+}
+
+.donut-shop{
+    font-size: 4em;
+}
+
+ h1 {
+    font-family: snap;
+	 margin: 0;
+	 font-size: 6em;
+	 padding: 0;
+	 color: #e978a9;
+	 text-shadow: 0 0.1em 20px rgba(0, 0, 0, 1), 0.05em -0.03em 0 rgba(0, 0, 0, 1), 0.05em 0.005em 0 rgba(0, 0, 0, 1), 0em 0.08em 0 rgba(0, 0, 0, 1), 0.05em 0.08em 0 rgba(0, 0, 0, 1), 0px -0.03em 0 rgba(0, 0, 0, 1), -0.03em -0.03em 0 rgba(0, 0, 0, 1), -0.03em 0.08em 0 rgba(0, 0, 0, 1), -0.03em 0 0 rgba(0, 0, 0, 1);
+}
+ h1 span {
+	 transform: scale(0.9);
+	 display: inline-block;
+}
+ h1 span:first-child {
+	 animation: bop 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+}
+ h1 span:last-child {
+	 animation: bopB 1.5s 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite alternate;
+}
+ @keyframes bop {
+	 0% {
+		 transform: scale(0.9);
+	}
+	 50%, 100% {
+		 transform: scale(1);
+	}
+}
+ @keyframes bopB {
+	 0% {
+		 transform: scale(0.9);
+	}
+	 80%, 100% {
+		 transform: scale(1) rotateZ(-3deg);
+	}
+}
+ 
+.text1 {
+    font-family: 'Amaranth';
+    font-variant: normal;
+    text-transform: none;
+    font-style: italic;
+    font-size: 2.4em;
+    text-shadow: 3px 2px 2px #000000;
+}
+
+.text2 {
+    font-family: 'Amaranth';
+    font-variant: normal;
+    text-transform: none;
+    font-style: italic;
+    font-size: 1.9em;
+    text-shadow: 2px 2px 2px #000000;
+    letter-spacing: 1px;
+}
+
+.text3 {
+    font-family: 'Amaranth';
+    font-variant: normal;
+    text-transform: none;
+    font-style: italic;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 2px #000000;
+    float: right;
+    
+}
