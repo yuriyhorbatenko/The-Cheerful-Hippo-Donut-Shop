@@ -28,8 +28,13 @@ CREATE TABLE orders
     
     purchase boolean DEFAULT true,
     
-    description varchar (200) NULL,
+    total decimal
+    (16,2) DEFAULT 0.00 NOT NULL,
+    
+    description varchar
+    (200) NULL,
 
     PRIMARY KEY
     (item_id)
 );
+

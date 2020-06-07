@@ -2,10 +2,10 @@
 
     <div class="page__toggle">
         <label class="toggle">
-            <input class="toggle__input" type="checkbox" name="option" data-id="{{this.item_id}}"
-                data-state="{{purchase}}">
+            <input id="addToCartCheckbox" class="toggle__input" type="checkbox" name="option" data-id="{{this.item_id}}"
+                data-menu="{{menu_item}}" data-price="{{price}}" data-state="{{purchase}}" data-quantity="{{quantity}}">
             <span class="toggle__label">
-                <span class="toggle__text">{{item_id}}). {{menu_item}} - {{price}} - {{category}} $</span>
+                <span class="toggle__text">{{item_id}}). {{menu_item}} - ${{price}}</span>
             </span>
         </label>
     </div>
