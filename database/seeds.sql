@@ -75,13 +75,13 @@ INSERT INTO orders
     (menu_item, price, food, purchase, description)
 VALUES
     ("The Blue Hippo", 1.50, true, false, "Glazed donut with blue frosting and blue sprinkles");
-    
-    INSERT INTO orders
+
+INSERT INTO orders
     (menu_item, price, food, purchase, description)
 VALUES
     ("Baby Hippos", 4.50, true, false, "these are traditional glazed mini donut holes. You get 15 donut holes");
-    
-    INSERT INTO orders
+
+INSERT INTO orders
     (menu_item, price, food, purchase, description)
 VALUES
     ("The Hungry Hungry Hippo", 15.00, true, false, "Your choice of 12 donuts");
@@ -136,7 +136,7 @@ INSERT INTO orders
 VALUES
     ("Hippaccino", 1.50, true, false, "This is a traditional coffee frappe");
 
-
+UPDATE donutshop_db.orders SET total = quantity * price;
 
 SELECT *
 FROM donutshop_db.orders;

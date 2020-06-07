@@ -1,5 +1,55 @@
 <li>
-    {{item_id}} - {{menu_item}} - {{price}} - {{category}}
-    <button class="btn btn-primary" type="reset" name="undo" value="Undo" data-id="{{this.item_id}}"
-        data-state="{{purchase}}" id="undoPurchase">Undo
+    <div class="container">
+        <div class="row">
+            <table class="table">
+                <tbody>
+                    <th scope="row">
+                        <div class="basket-product">
+                            <div class="item">
+                                <div class="product-details">
+                                    <div class="item_id" style="font-size: 16px; display:inline-block"><strong>Menu
+                                            Id:
+                                            {{item_id}}</strong>
+                                    </div>
+                                    <div class="menu_item" style="font-size: 16px; display:inline-block">{{menu_item}}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price" style="font-size: 12px; display:inline-block">{{price}}</div>
+                            <div class="quantity" style="font-size: 12px; display:inline-block"><input type="number"
+                                    value="{{quantity}}" min="{{quantity}}" class="quantity-field">
+                            </div>
+                            <div class="subtotal" style="font-size:12px; display:inline-block">{{total}}</div>
+                            <button style="display:inline-block" class="remove btn btn-primary" type="reset" name="undo"
+                                value="Undo" data-id="{{this.item_id}}" data-state="{{purchase}}" id="undoPurchase"><i
+                                    class="far fa-trash-alt"></i></button>
+                        </div>
+                    </th>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </li>
+
+{{!-- <div class="basket-product">
+    <div class="item">
+        <div class="product-details">
+            <h1><strong><span class="item-quantity">4</span> x Eliza J</strong> Lace Sleeve Cuff
+                Dress</h1>
+            <p><strong>Navy, Size 18</strong></p>
+            <p>Product Code - 232321939</p>
+        </div>
+    </div>
+    <div class="price">26.00</div>
+    <div class="quantity">
+        <input type="number" value="4" min="1" class="quantity-field">
+    </div>
+    <div class="subtotal">104.00</div>
+</div> --}}
+{{!-- 
+
+  {{#each orders}}
+                        {{#if this.purchase}}
+                        {{> orders/purchase-block purchase=true}}
+                        {{/if}}
+                        {{/each}} --}}
