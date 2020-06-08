@@ -6,8 +6,8 @@ var router = express.Router();
 var donut = require("../models/donut.js");
 
 //create routes, index
-router.get("/", function(req, res) {
-  donut.selectAll(function(data) {
+router.get("/", function (req, res) {
+  donut.selectAll(function (data) {
     var hbsObject = {
       orders: data
     };
@@ -17,7 +17,7 @@ router.get("/", function(req, res) {
 });
 
 // update: put route and return to index
-router.put("/orders/update/:item_id", function(req, res) {
+router.put("/orders/update/:item_id", function (req, res) {
   var condition = "item_id = " + req.params.item_id;
   console.log("condition", condition);
 
@@ -26,7 +26,7 @@ router.put("/orders/update/:item_id", function(req, res) {
       purchase: req.body.purchase
     },
     condition,
-    function(result) {
+    function (result) {
       if (result.changedRows === 0) {
         return res.status(404).end();
       } else {

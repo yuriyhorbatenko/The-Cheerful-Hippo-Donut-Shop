@@ -1,7 +1,7 @@
 <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
 	aria-labelledby="staticBackdropLabel" aria-hidden="true">
 	<div class="modal-dialog">
-		<div class="modal-content">
+		<div class="modal-content modal-login-class">
 			<div class="modal-header">
 				<h5 class="modal-title" id="staticBackdropLabel">Please log in to continue</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -20,7 +20,7 @@
 								</span></div>
 						</div>
 						<input name="username" type="text" class="form-control" id="inlineFormInputGroupUsername1"
-							placeholder="login" required>
+							placeholder="login" value="admin" required>
 					</div>
 
 					<label class="sr-only" for="inlineFormInputGroupUsername2"></label>
@@ -30,15 +30,15 @@
 									lock
 								</span></div>
 						</div>
-						<input name="password" type="text" class="form-control" id="inlineFormInputGroupUsername2"
-							placeholder="password" required>
+						<input name="password" type="password" class="form-control" id="inlineFormInputGroupUsername2"
+							placeholder="password" value="admin" required>
 					</div>
 
 
 					<div class="modal-footer">
 
 						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-						<button type="submit" class="btn btn-primary">Submit</button>
+						<button type="submit" class="btn btn-primary login-button login-button-admin">Submit</button>
 
 					</div>
 
