@@ -1,0 +1,89 @@
+<div class="header">
+    <a href="#home">
+        <img class="logo" src="assets/img/logo.png" value="Refresh" onclick="history.go(0)"></a>
+    <ul>
+        <li><a href="../#index">Go back</a></li>
+
+    </ul>
+</div>
+
+
+<section id="admin">
+
+    <div class="admin">
+
+        <form>
+            <div class="divTable cinereousTable">
+
+                <div class="divTableHeading">
+                    <div class="divTableRow">
+                        <div class="divTableHead">Item Name</div>
+                        <div class="divTableHead">Item Description</div>
+                        <div class="divTableHead">Item Price</div>
+                        <div class="divTableHead">Item Quantity</div>
+                        <div class="divTableHead">Item Type</div>
+                        <div class="divTableHead">Add</div>
+                    </div>
+                </div>
+
+
+                <div class="divTableBody">
+                    <div class="divTableRow">
+
+                        <div class="divTableCell admin-input-class"><input class="admin-input" type="text" size="29"
+                                required>
+                        </div>
+                        <div class="divTableCell admin-input-class"><input class="admin-input" type="text" size="70"
+                                required>
+                        </div>
+                        <div class="divTableCell admin-input-class"><input class="admin-input" type="number" min="0"
+                                max="999" step="0.1" placeholder="$" required>
+                        </div>
+                        <div class="divTableCell admin-input-class"><input class="admin-input" type="number" min="1"
+                                max="999" step="1" placeholder="#" required>
+                        </div>
+                        <div class="divTableCell admin-input-class"><select class="" required>
+                                <option selected disabled value="">Choose...</option>
+                                <option value="1">Food</option>
+                                <option value="2">Drinks</option>
+                            </select>
+                        </div>
+                        <div class="divTableCell admin-input-class">
+                            <button class="admin-input" type="submit"><i class="fa fa-plus " aria-hidden="true"
+                                    type="submit"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="divTable cinereousTable">
+
+            <div class="divTableHeading">
+                <div class="divTableRow">
+                    <div class="divTableHead">Item ID</div>
+                    <div class="divTableHead">Item Name</div>
+                    <div class="divTableHead">Item Description</div>
+                    <div class="divTableHead">Item Price</div>
+                    <div class="divTableHead">Item Quantity</div>
+                    <div class="divTableHead">Update</div>
+                    <div class="divTableHead">Delete</div>
+                </div>
+            </div>
+
+            <div class="divTableBody">
+
+
+                {{#each orders}}
+
+                {{> orders/admin-block}}
+
+                {{/each}}
+
+            </div>
+
+        </div>
+
+</section>

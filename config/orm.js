@@ -34,16 +34,16 @@ function objToSql(ob) {
 
 //object for all SQL statement functions
 var orm = {
-  selectAll: function(tableInput, callBack) {
+  selectAll: function (tableInput, callBack) {
     var queryString = "SELECT * FROM " + tableInput + ";";
-    connection.query(queryString, function(err, result) {
+    connection.query(queryString, function (err, result) {
       if (err) {
         throw err;
       }
       callBack(result);
     });
   },
-  insertOne: function(table, columns, values, callback) {
+  insertOne: function (table, columns, values, callback) {
     var queryString = "INSERT INTO " + table;
     queryString += " (";
     queryString += columns.toString();
@@ -54,14 +54,14 @@ var orm = {
 
     console.log(queryString);
 
-    connection.query(queryString, values, function(err, result) {
+    connection.query(queryString, values, function (err, result) {
       if (err) {
         throw err;
       }
       callback(result);
     });
   },
-  updateOne: function(table, objColVals, condition, callback) {
+  updateOne: function (table, objColVals, condition, callback) {
     var queryString = "UPDATE " + table;
 
     queryString += " SET ";
@@ -70,13 +70,28 @@ var orm = {
     queryString += condition;
 
     console.log(queryString);
-    connection.query(queryString, function(err, result) {
+    connection.query(queryString, function (err, result) {
       if (err) {
         throw err;
       }
       callback(result);
     });
+  },
+
+  delete: function (table, condition, cb) {
+    var queryString = "DELETE FROM " + table;
+    queryString += " WHERE ";
+    queryString += condition;
+
+    connection.query(queryString, function (err, result) {
+      if (err) {
+        throw err;
+      }
+
+      cb(result);
+    });
   }
+
 };
 
 module.exports = orm;

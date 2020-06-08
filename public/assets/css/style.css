@@ -298,31 +298,9 @@ section:nth-child(4) {
 .modal-content {
   border-radius: 25px;
   background-color: #ffffff;
+  
 }
 
-/* ===========================start shopping cart modal============================== */
-
-
-body .modal-dialog { /* Width */
-  max-width: 100%;
-  width: auto !important;
-  display: inline-block;
-}
-
-.modal {
-  z-index: -1;
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-open .modal {
-   z-index: 1050;
-}
-
-/* .quantity-field {
-  max-width: 50px;
-} */
 
 img,
 .basket-module,
@@ -489,6 +467,7 @@ li.subtotal:before {
 
 .product-frame {
   border: 1px solid #aaa;
+  
 }
 
 .product-details {
@@ -499,6 +478,7 @@ li.subtotal:before {
 }
 
 .quantity-field {
+  
   background-color: #ccc;
   border: 1px solid #aaa;
   border-radius: 4px;
@@ -514,6 +494,7 @@ aside {
 }
 
 .summary {
+  
   background-color: #eee;
   border: 1px solid #aaa;
   padding: 1rem;
@@ -532,8 +513,10 @@ aside {
 
 .summary-subtotal,
 .summary-total {
+  
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+  
   clear: both;
   margin: 1rem 0;
   overflow: hidden;
@@ -599,8 +582,10 @@ aside {
 }
 
 .summary-delivery-selection {
+  
   background-color: #ccc;
   border: 1px solid #aaa;
+  
   border-radius: 4px;
   display: block;
   font-size: 0.625rem;
@@ -675,8 +660,6 @@ aside {
   }
 }
 
-
-/* Important part */
 .modal-dialog{
   overflow-y: initial !important
 }
@@ -695,4 +678,12 @@ th{
 
 .remove {
   width: 40px;
+}
+
+.modal-login-class{
+height: 300px;
+}
+
+.modal-total-class{
+  margin-top: 200px;
 }
